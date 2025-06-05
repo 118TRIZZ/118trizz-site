@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>118trizz - Handmade Soaps</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem;
+            z-index: 1000;
+        }
+        body {
+            margin-top: 180px;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        section, main {
+            padding: 3rem 1rem;
+        }
+        .fear-god {
+            text-align: center;
+            font-size: 2rem;
+            color: rgba(0, 0, 0, 0.05);
+            font-weight: bold;
+            position: relative;
+            bottom: 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <img src="logo.png" alt="118trizz Logo" style="width: 100px;"/>
+        <h1>Welcome to 118trizz</h1>
+        <p>Fresh. Clean. Bold.</p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#history">History</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home" class="fade-in">
+        <h2>Our Featured Soaps</h2>
+        <div class="product-grid">
+            <div class="product fade-in">
+                <a href="#">
+                    <h3>Lavender Dream</h3>
+                    <p>Relaxing and calming with real lavender oil.</p>
+                </a>
+            </div>
+            <div class="product fade-in">
+                <a href="#">
+                    <h3>Citrus Burst</h3>
+                    <p>Fresh orange and lemon scent to energize your day.</p>
+                </a>
+            </div>
+            <div class="product fade-in">
+                <a href="#">
+                    <h3>Minty Fresh</h3>
+                    <p>Cool peppermint for a refreshing cleanse.</p>
+                </a>
+            </div>
+            <div class="product fade-in">
+                <a href="#">
+                    <h3>Honey Oatmeal</h3>
+                    <p>Gentle and soothing with real oats and honey.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="fade-in">
+        <h2>About 118trizz</h2>
+        <p>At 118trizz, we create soaps that reflect comfort, creativity, and care. Our small-batch bars are handcrafted to nourish your skin and elevate your day. Every scent is inspired by something real and meaningful.</p>
+    </section>
+
+    <section id="history" class="fade-in">
+        <h2>Our History</h2>
+        <p>118trizz is more than a brand — it's a story. “118” comes from my mom’s house in Syracuse, NY. That home inspired the love and warmth we try to bring into every product. “Trizz” is my own personal touch — a tag that’s been with me through the journey.</p>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <p>Got questions? Reach out to us anytime!</p>
+        <p>Email: <a href="mailto:support@118trizz.com">support@118trizz.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/118trizz" target="_blank">@118trizz</a></p>
+    </section>
+
+    <footer class="fade-in">
+        <p>&copy; 2025 118trizz. All rights reserved.</p>
+    </footer>
+
+    <div class="fear-god">FEAR GOD</div>
+</body>
+</html>
