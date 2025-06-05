@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout - 118trizz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .checkout-container {
+      background: #1e1e1e;
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .checkout-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+    }
+
+    .checkout-container p {
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    .checkout-button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .checkout-button:hover {
+      background: #45a049;
+    }
+
+    .trust-badges {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+      filter: grayscale(1) opacity(0.6);
+    }
+
+    .trust-badges img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <h1>Secure Checkout</h1>
+    <p>You're just one step away from freshness.<br>Complete your order with confidence.</p>
+    <form action="https://buy.stripe.com/test_7sI3d34D21dqau8eUU" method="GET">
+      <button type="submit" class="checkout-button">Buy with Stripe</button>
+    </form>
+    <div class="trust-badges">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/lock-2.png" alt="Secure" />
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/shield.png" alt="Shield" />
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/checkmark--v1.png" alt="Verified" />
+    </div>
+  </div>
+</body>
+</html>
